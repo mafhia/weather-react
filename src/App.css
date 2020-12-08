@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  color: #ff6699;
+  font-family: "Boogaloo", cursive;
+  font-family: "Handlee", cursive;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+#currentlocation-button {
+  background-color: transparent;
+  border: solid 2px #ff6699;
+  border-radius: 20%;
+  position: relative;
+  left: 635px;
+  top: -88px;
+  height: 35px;
+  width: 35px;
+}
+
+#location-button :hover {
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+Button {
+  color: #ff6699;
+  border-radius: 20%;
+  border: 1px solid #ff99cc;
+  font-weight: 600;
+}
+
+Search {
+  color: #ff6699;
+  display: inline;
+  position: relative;
+  left: 650px;
+  top: -70px;
+}
+
+.textbox {
+  color: #ff6699;
+  width: auto;
+}

@@ -3,16 +3,14 @@
   color: #ff6699;
   font-family: "Boogaloo", cursive;
   font-family: "Handlee", cursive;
+  border: 5px dotted #ff99cc;
+  border-radius: 5%;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#timeDate {
+  text-align: left;
+  font-size: 16px;
 }
 
 #currentlocation-button {
@@ -34,22 +32,23 @@
   transition: all 200ms ease-in-out;
 }
 
-Button {
+.Button {
   color: #ff6699;
   border-radius: 20%;
   border: 1px solid #ff99cc;
   font-weight: 600;
 }
 
-Search {
+.Search {
   color: #ff6699;
   display: inline;
   position: relative;
-  left: 650px;
+  left: 450px;
   top: -70px;
 }
 
-.textbox {
+.Textbox {
   color: #ff6699;
   width: auto;
 }
+

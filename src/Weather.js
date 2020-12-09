@@ -13,7 +13,9 @@ export default function Weather() {
             low: response.data.main.temp_min,
             icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             sunrise: response.data.sys.sunrise,
+            //formatHours((response.data.sys.sunrise + response.data.timezone) * 1000),
             sunset: response.data.sys.sunset,
+            //formatHours((response.data.sys.sunset + response.data.timezone) * 1000),
             pressure: response.data.main.pressure,
             wind: response.data.wind.speed,
             humidity: response.data.main.humidity,
@@ -35,27 +37,29 @@ export default function Weather() {
         setCity(event.target.value);
     }
 
+    
+
     let form = (
-      <h2>
-        <span role="img" aria-labelledby="Magnifying-glass">
-          🔎
-        </span>{" "}
-      </h2>,
       <form className="Search" id="searchcity" onSubmit={handleSubmit}>
         <input
           type="search"
           placeholder="Enter a city"
-          className="textbox"
+          className="Textbox"
           id="search-city-input"
           onChange={updateCity}
           autoFocus="on"
         />
-        <input type="submit" className="button" value="Go" />
+        <input type="submit" className="Button" value="Go" />
       </form>
     )
 
     return (
         <div className="WeatherDetails">
+            <h2>
+             <span role="img" aria-labelledby="Magnifying-glass">
+               🔎
+             </span>{" "}
+             </h2>
             {form}
             <button id="currentlocation-button">
             <span role="img" aria-label="Pin">
@@ -63,21 +67,21 @@ export default function Weather() {
             </span>
             </button>
             <div className="Details">
-             <div className="WeatherDetails1">
-                {city} <br  />
-                {Math.round(weather.temperature)}° C <br />
-                {weather.description} <br />
-                H:{Math.round(weather.high)}°C  L:{Math.round(weather.low)}°C
+             <div className="WeatherDetails1" id="wD1">
+                <span id="currentCity">{city}</span> <br />
+                <span id="currentTemp">{Math.round(weather.temperature)}° C </span> <br />
+                <span id="description">{weather.description}</span> <br />
+                <span id="high">H:{Math.round(weather.high)}°C</span>  <span id="low">L:{Math.round(weather.low)}°C</span>
+             </div> 
+             <div className="WeatherDetails2" id="wD2" >
+                <img src={weather.icon} id="current-weather-icon" alt="Weather icon" />
              </div>
-             <div className="WeatherDetails2">
-                <img src={weather.icon} alt="Weather icon" />
-             </div>
-             <div className="WeatherDetails3">
+             <div className="WeatherDetails3" id="wD3" >
                 Sunrise at {" "} {weather.sunrise} <br />
                 Sunset at {" "} {weather.sunset} <br />
                 Pressure {" "} {weather.pressure} hPa
-             </div>
-             <div className="WeatherDetails4">
+             </div> <br />
+             <div className="WeatherDetails4" id="wD4" >
                 Wind {" "} {Math.round(weather.wind)} {" "} km/hr <br />
                 Humidity {" "} {weather.humidity} {" "} % <br />
                 Feels like {" "} {Math.round(weather.feelsLike)} {" "} °C

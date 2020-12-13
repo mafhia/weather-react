@@ -3,6 +3,7 @@ import Weather from "./Weather";
 import DateTime from "./DateTime";
 
 import './App.css';
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <p>
           Hello World!
         </p>
-        
+        <Footer />
       </header>
     </div>
   );

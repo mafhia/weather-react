@@ -8,35 +8,14 @@
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
-#timeDate {
-  text-align: left;
-  font-size: 16px;
-}
-
-#currentlocation-button {
-  background-color: transparent;
-  border: solid 2px #ff6699;
-  border-radius: 20%;
-  position: relative;
-  left: 635px;
-  top: -88px;
-  height: 35px;
-  width: 35px;
-}
-
-#location-button :hover {
-  background-color: #ff99cc;
-  border: none;
-  border-radius: 20%;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-}
-
 .Button {
   color: #ff6699;
   border-radius: 20%;
   border: 1px solid #ff99cc;
   font-weight: 600;
+  position: relative;
+  left: -225px;
+  top: -10px;
 }
 
 .Search {
@@ -49,6 +28,83 @@
 
 .Textbox {
   color: #ff6699;
-  width: auto;
+  border-color: #ff6699;
+  width: 200px;
+  position: relative;
+  left: -235px;
+  top: -10px;
+}
+
+.WeatherDetails1 {
+  position: relative;
+  left: -260px;
+  top: -5px;
+}
+
+.WeatherDetails3 {
+  position: relative;
+  left: 70px;
+  top: -270px;
+}
+
+.WeatherDetails4 {
+  position: relative;
+  left: 255px;
+  top: -365px;
+}
+
+
+#currentCity {
+  font-size: 35px;
+}
+
+#description {
+  text-transform: capitalize;
+}
+
+#currentTemp {
+  font-size: 40px;
+}
+
+#current-weather-icon {
+  position: relative;
+  left: -115px;
+  top: -158px;
+  width: 150px;
+  height: 150px;
+}
+
+#timeDate {
+  text-align: left;
+  font-size: 16px;
+  position: relative;
+  left: 50px;
+  top: 70px;
+}
+
+#search-icon {
+  font-size: 20px;
+  position: relative;
+  left: 65px;
+  top: -35px;
+}
+
+#currentlocation-button {
+  background-color: transparent;
+  border: solid 2px #ff6699;
+  border-radius: 20%;
+  position: relative;
+  left: 260px;
+  top: -80px;
+  height: 35px;
+  width: 35px;
+}
+
+#location-button :hover {
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 

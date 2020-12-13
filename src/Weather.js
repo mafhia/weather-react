@@ -56,7 +56,7 @@ export default function Weather() {
     return (
         <div className="WeatherDetails">
             <h2>
-             <span role="img" aria-labelledby="Magnifying-glass">
+             <span role="img" aria-labelledby="Magnifying-glass" id="search-icon">
                🔎
              </span>{" "}
              </h2>
@@ -69,7 +69,7 @@ export default function Weather() {
             <div className="Details">
              <div className="WeatherDetails1" id="wD1">
                 <span id="currentCity">{city}</span> <br />
-                <span id="currentTemp">{Math.round(weather.temperature)}° C </span> <br />
+                <span id="currentTemp">{Math.round(weather.temperature)}° C  |  F</span> <br />
                 <span id="description">{weather.description}</span> <br />
                 <span id="high">H:{Math.round(weather.high)}°C</span>  <span id="low">L:{Math.round(weather.low)}°C</span>
              </div> 

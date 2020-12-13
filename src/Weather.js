@@ -88,6 +88,5 @@ export default function Weather() {
              </div>
             </div>
         </div>
-        
     );
 }

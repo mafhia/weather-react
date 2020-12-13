@@ -2,7 +2,6 @@ import React from "react";
 import Weather from "./Weather";
 import DateTime from "./DateTime";
 import Footer from "./Footer";
-import Forecast from "./Forecast";
 
 import './App.css';
 

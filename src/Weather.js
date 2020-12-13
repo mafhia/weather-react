@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 
 export default function Weather() {
-    const [city, setCity] = useState("");
+    const [city, setCity] = useState("La Chevrolière");
     const [weather, setWeather] = useState("");
 
     function showWeather(response) {

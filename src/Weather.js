@@ -12,11 +12,11 @@ export default function Weather() {
       high: response.data.main.temp_max,
       low: response.data.main.temp_min,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      sunrise: formatHours(
-        response.data.sys.sunrise * 1000 + response.data.timezone * 1000
+      sunrise: formatHours((
+        response.data.sys.sunrise + response.data.timezone )* 1000
       ),
-      sunset: formatHours(
-        response.data.sys.sunset * 1000 + response.data.timezone * 1000
+      sunset: formatHours((
+        response.data.sys.sunset + response.data.timezone ) * 1000
       ),
       pressure: response.data.main.pressure,
       wind: response.data.wind.speed,
@@ -67,7 +67,7 @@ export default function Weather() {
     return (
       <div className="WeatherDetails">
         <h2>
-          <span role="img" aria-labelledby="Magnifying-glass" id="search-icon">
+          <span role="img" aria-label="Magnifying-glass" id="search-icon">
             🔎
           </span>{" "}
         </h2>
@@ -81,7 +81,7 @@ export default function Weather() {
           <div className="WeatherDetails1" id="wD1">
             <span id="currentCity">{weather.city}</span> <br />
             <span id="currentTemp">
-              {Math.round(weather.temperature)}° C | F
+              {Math.round(weather.temperature)}° C 
             </span>{" "}
             <br />
             <span id="description">{weather.description}</span> <br />

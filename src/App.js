@@ -4,6 +4,7 @@ import DateTime from "./DateTime";
 import Footer from "./Footer";
 
 import './App.css';
+import './Weather.css';
 
 
 function App() {

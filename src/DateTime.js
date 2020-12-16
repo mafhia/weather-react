@@ -5,7 +5,7 @@ export default function TimeDate({ day, date, year, time }) {
       <div className="TimeDate" id="timeDate">
         <p>
           <span id="month">
-            {date}
+            {date} {""}
             <span id="year">{year}</span>
           </span>
           <br />

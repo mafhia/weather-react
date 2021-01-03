@@ -58,12 +58,6 @@ ul {
     top: -365px;
   }
   
-  .Footer {
-    font-weight: 600;
-    position: relative;
-    top: -225px;
-  }
-  
   #currentCity {
     font-size: 35px;
     font-weight: 600;
@@ -89,7 +83,7 @@ ul {
   #timeDate {
     text-align: left;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     position: relative;
     left: 35px;
     top: 25px;

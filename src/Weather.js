@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDT from "./FormattedDT";
 
 export default function Weather() {
   const [city, setCity] = useState("La Chevrolière");
@@ -9,6 +10,7 @@ export default function Weather() {
       ready: true,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
       high: response.data.main.temp_max,
       low: response.data.main.temp_min,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -66,6 +68,7 @@ export default function Weather() {
   if (weather.ready) {
     return (
       <div className="WeatherDetails">
+        <FormattedDT date= {weather.date} />
         <h2>
           <span role="img" aria-label="Magnifying-glass" id="search-icon">
             🔎

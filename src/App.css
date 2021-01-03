@@ -11,3 +11,8 @@
   margin: 0 auto;
 }
 
+.Footer {
+  font-weight: 600;
+  position: relative;
+  top: -225px;
+}

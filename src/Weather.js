@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDT from "./FormattedDT";
+import WeatherDetails from "./WeatherDetails";
 
 export default function Weather() {
   const [city, setCity] = useState("La Chevrolière");
@@ -53,7 +54,8 @@ export default function Weather() {
     setCity(event.target.value);
   }
   let form = (
-    <form className="Search" id="searchcity" onSubmit={handleSubmit}>
+    <div>
+      <form className="Search" id="searchcity" onSubmit={handleSubmit}>
       <input
         type="search"
         placeholder="Enter a city"
@@ -63,57 +65,19 @@ export default function Weather() {
         autoFocus="on"
       />
       <input type="submit" className="Button" value="Go" />
-    </form>
+     </form>
+    <WeatherDetails data={weather} />
+    </div>
   );
   if (weather.ready) {
     return (
-      <div className="WeatherDetails">
+      <div>
         <FormattedDT date= {weather.date} />
-        <h2>
-          <span role="img" aria-label="Magnifying-glass" id="search-icon">
-            🔎
-          </span>{" "}
-        </h2>
         {form}
-        <button id="currentlocation-button">
-          <span role="img" aria-label="Pin">
-            📍
-          </span>
-        </button>
-        <div className="Details">
-          <div className="WeatherDetails1" id="wD1">
-            <span id="currentCity">{weather.city}</span> <br />
-            <span id="currentTemp">
-              {Math.round(weather.temperature)}° C 
-            </span>{" "}
-            <br />
-            <span id="description">{weather.description}</span> <br />
-            <span id="high">H:{Math.round(weather.high)}°C</span>{" "}
-            <span id="low">L:{Math.round(weather.low)}°C</span>
-          </div>
-          <div className="WeatherDetails2" id="wD2">
-            <img
-              src={weather.icon}
-              id="current-weather-icon"
-              alt="Weather icon"
-            />
-          </div>
-          <div className="WeatherDetails3" id="wD3">
-            Sunrise at {weather.sunrise} <br />
-            Sunset at {weather.sunset} <br />
-            Pressure {weather.pressure} hPa
-          </div>{" "}
-          <br />
-          <div className="WeatherDetails4" id="wD4">
-            Wind {Math.round(weather.wind)} km/hr <br />
-            Humidity {weather.humidity} % <br />
-            Feels like {Math.round(weather.feelsLike)} °C
-          </div>
-        </div>
       </div>
     );
   } else {
     search();
-    return null;
+    return "Searching...";
   }
 }

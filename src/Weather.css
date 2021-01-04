@@ -18,7 +18,7 @@ ul {
   font-weight: 600;
   position: relative;
   left: -259px;
-  top: -10px;
+  top: 50px;
 }
   
   .Search {
@@ -36,7 +36,7 @@ ul {
     width: 200px;
     position: relative;
     left: -268px;
-    top: -10px;
+    top: 50px;
   }
   
   .WeatherDetails1 {
@@ -92,8 +92,8 @@ ul {
   #search-icon {
     font-size: 20px;
     position: relative;
-    left: 30px;
-    top: -35px;
+    left: 48px;
+    top: -55px;
   }
   
   #currentlocation-button {
@@ -101,8 +101,8 @@ ul {
     border: solid 2px #ff6699;
     border-radius: 20%;
     position: relative;
-    left: 233px;
-    top: -80px;
+    left: 350px;
+    top: -99px;
     height: 35px;
     width: 35px;
   }

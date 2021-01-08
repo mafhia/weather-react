@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDT from "./FormattedDT";
 import WeatherDetails from "./WeatherDetails";
+import WeatherTemp from "./WeatherTemp";
 
 export default function Weather() {
   const [city, setCity] = useState("La Chevrolière");
@@ -14,7 +15,7 @@ export default function Weather() {
       date: new Date(response.data.dt * 1000),
       high: response.data.main.temp_max,
       low: response.data.main.temp_min,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       sunrise: formatHours((
         response.data.sys.sunrise + response.data.timezone )* 1000
       ),

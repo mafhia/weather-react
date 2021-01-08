@@ -1,5 +1,6 @@
 import React from "react";
-import Weather from "./Weather";
+import WeatherIcons from "./WeatherIcons";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherDetails(props) {
   return (
@@ -19,20 +20,15 @@ export default function WeatherDetails(props) {
         <div className="Details">
           <div className="WeatherDetails1" id="wD1">
             <span id="currentCity">{props.data.city}</span> <br />
-            <span id="currentTemp">
-              {Math.round(props.data.temperature)}° C 
-            </span>{" "}
+            <WeatherTemp celsius={props.data.temperature} />
+            {" "}
             <br />
             <span id="description">{props.data.description}</span> <br />
             <span id="high">H:{Math.round(props.data.high)}°C</span>{" "}
             <span id="low">L:{Math.round(props.data.low)}°C</span>
           </div>
           <div className="WeatherDetails2" id="wD2">
-            <img
-              src={props.data.icon}
-              id="current-weather-icon"
-              alt="Weather icon"
-            />
+            <WeatherIcons code={props.data.icon} />
           </div>
           <div className="WeatherDetails3" id="wD3">
             Sunrise at {props.data.sunrise} <br />

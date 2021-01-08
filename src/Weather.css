@@ -5,6 +5,14 @@ ul {
   left: auto;
 }
 
+img {
+  max-width: 160px;
+  max-height: 160px;
+  position: relative;
+  top: -132px;
+  left: -63px;
+}
+
 .WeeklyForecast {
   text-align: left;
   top: -150px;

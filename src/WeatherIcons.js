@@ -19,8 +19,8 @@ export default function WeatherIcon(props) {
       "11n": "/Images/thunderstorm1.gif",
       "13d": "/Images/snow.gif",
       "13n": "/Images/snow.gif",
-      "50d": "/Images/mist.gif",
-      "50n": "/Images/mist.gif",
+      "50d": "/Images/mist1.gif",
+      "50n": "/Images/mist1.gif",
   };
-  return <img src={codeMapping[props.code]} />;
+  return <img id="currentWeather" src={codeMapping[props.code]} />;
 }

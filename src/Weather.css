@@ -5,14 +5,6 @@ ul {
   left: auto;
 }
 
-img {
-  max-width: 160px;
-  max-height: 160px;
-  position: relative;
-  top: -165px;
-  left: -63px;
-}
-
 .WeeklyForecast {
   text-align: left;
   top: -150px;
@@ -29,52 +21,60 @@ img {
   top: 50px;
 }
   
-  .Search {
-    color: #ff6699;
-    display: inline;
-    position: relative;
-    left: 450px;
-    top: -70px;
-  }
+.Search {
+  color: #ff6699;
+  display: inline;
+  position: relative;
+  left: 450px;
+  top: -70px;
+}
   
-  .Textbox {
-    font-weight: 500;
-    color: #ff6699;
-    border-color: #ff6699;
-    width: 200px;
-    position: relative;
-    left: -268px;
-    top: 50px;
-  }
+.Textbox {
+  font-weight: 500;
+  color: #ff6699;
+  border-color: #ff6699;
+  width: 200px;
+  position: relative;
+  left: -268px;
+  top: 50px;
+}
   
-  .WeatherDetails1 {
-    font-weight: 500;
-    position: relative;
-    left: -228px;
-    top: -40px;
-  }
+.WeatherDetails1 {
+  font-weight: 500;
+  position: relative;
+  left: -228px;
+  top: -40px;
+}
   
-  .WeatherDetails3 {
-    position: relative;
-    left: 115px;
-    top: -278px;
-  }
+.WeatherDetails3 {
+  position: relative;
+  left: 115px;
+  top: -278px;
+}
   
-  .WeatherDetails4 {
-    position: relative;
-    left: 260px;
-    top: -375px;
-  }
+.WeatherDetails4 {
+  position: relative;
+  left: 260px;
+  top: -375px;
+}
 
-  .temperature {
-    font-size: 45px;
-    font-weight: 500;
-  }
+.temperature {
+  font-size: 45px;
+  font-weight: 500;
+}
 
-  .unit {
-    font-size: 25px;
-    font-weight: 600;
-  }
+.unit {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#currentWeather {
+max-width: 140px;
+max-height: 140px;
+position: relative;
+top: -165px;
+left: -63px;
+}
 
   #currentCity {
     font-size: 35px;

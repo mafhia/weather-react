@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDT from "./FormattedDT";
 import WeatherDetails from "./WeatherDetails";
-import WeatherTemp from "./WeatherTemp";
+import Forecast from "./Forecast";
+
 
 export default function Weather() {
   const [city, setCity] = useState("La Chevrolière");
@@ -75,6 +76,7 @@ export default function Weather() {
       <div>
         <FormattedDT date= {weather.date} />
         {form}
+        <Forecast city={weather.city}/>
       </div>
     );
   } else {

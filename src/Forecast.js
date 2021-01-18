@@ -20,11 +20,11 @@ export default function Forecast(props) {
     return (
      <div className="WeatherForecast row">
        <ForecastPreview data={forecast.list[0]}/>
+       <ForecastPreview data={forecast.list[1]}/>
+       <ForecastPreview data={forecast.list[2]}/>
+       <ForecastPreview data={forecast.list[3]}/>
        <ForecastPreview data={forecast.list[4]}/>
-       <ForecastPreview data={forecast.list[12]}/>
-       <ForecastPreview data={forecast.list[20]}/>
-       <ForecastPreview data={forecast.list[28]}/>
-       <ForecastPreview data={forecast.list[36]}/>
+       <ForecastPreview data={forecast.list[5]}/>
      </div>
     );
     

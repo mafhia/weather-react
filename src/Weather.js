@@ -28,7 +28,9 @@ export default function Weather() {
       humidity: response.data.main.humidity,
       feelsLike: response.data.main.feels_like,
       city: response.data.name,
+      country: response.data.sys.country
     });
+    console.log(response.data);
   }
   function formatHours(timestamp) {
     let date = new Date(timestamp);
@@ -56,13 +58,13 @@ export default function Weather() {
     setCity(event.target.value);
   }
   let form = (
-    <div>
+    <div className="form-floating">
       <form className="Search" id="searchcity" onSubmit={handleSubmit}>
       <input
-        type="search"
+        type="search" 
+        className="Textbox form-control" 
+        id="floatingInput" 
         placeholder="Enter a city"
-        className="Textbox"
-        id="search-city-input"
         onChange={updateCity}
         autoFocus="on"
       />
@@ -75,7 +77,7 @@ export default function Weather() {
     return (
       <div>
         <FormattedDT date= {weather.date} />
-        {form}
+        {form} 
         <Forecast city={weather.city}/>
       </div>
     );

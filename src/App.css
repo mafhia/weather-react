@@ -3,16 +3,11 @@
   color: #ff6699;
   font-family: "Boogaloo", cursive;
   font-family: "Handlee", cursive;
-  border: 5px dotted #ff99cc;
-  border-radius: 5%;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  max-width: 820px;
-  max-height: 420px;
-  margin: 0 auto;
+  border-radius: 3%;
 }
 
 .Footer {
   font-weight: 600;
-  position: relative;
-  top: -225px;
+  margin: 0 auto;
 }

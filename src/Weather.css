@@ -1,61 +1,42 @@
-ul {
-  list-style: none;
-  position: relative;
-  top: auto;
-  left: auto;
-}
-
-.WeeklyForecast {
-  text-align: left;
-  top: -150px;
-  left: 17px;
-}
-  
 .Button {
   color: #ff6699;
   border-radius: 20%;
   border: 1px solid #ff99cc;
   font-weight: 600;
   position: relative;
-  left: -259px;
-  top: 50px;
+  top: -33px;
+  left: 233px;
 }
   
-.Search {
-  color: #ff6699;
-  display: inline;
-  position: relative;
-  left: 450px;
-  top: -70px;
-}
-  
-.Textbox {
+.Textbox.form-control {
   font-weight: 500;
   color: #ff6699;
   border-color: #ff6699;
-  width: 200px;
-  position: relative;
-  left: -268px;
-  top: 50px;
+  width: 220px;
+}
+
+.Search {
+  margin: 10px 620px;
 }
   
 .WeatherDetails1 {
   font-weight: 500;
-  position: relative;
-  left: -228px;
-  top: -40px;
+  margin: 21px 30px;
+}
+
+.WeatherDetails2 {
+  margin-top: 45px;
 }
   
 .WeatherDetails3 {
-  position: relative;
-  left: 115px;
-  top: -278px;
+  font-weight: 500;
+  margin-top: 65px;
 }
   
 .WeatherDetails4 {
-  position: relative;
-  left: 260px;
-  top: -375px;
+  font-weight: 500;
+  margin-top: 67px;
+  margin-left: -51px;
 }
 
 .temperature {
@@ -68,65 +49,38 @@ ul {
   font-weight: 600;
 }
 
-#currentWeather {
-max-width: 140px;
-max-height: 140px;
-position: relative;
-top: -165px;
-left: -63px;
+.WeatherDetails2 #currentWeather {
+  max-width: 150px;
+  max-height: 150px;
 }
 
-  #currentCity {
+#currentCity {
     font-size: 35px;
     font-weight: 600;
     margin: 10px 0;
-  }
+}
+
+#country {
+  font-size: 35px;
+  font-weight: 600;
+}
   
   #description {
     text-transform: capitalize;
   }
   
   #current-weather-icon {
-    position: relative;
-    left: -67px;
-    top: -158px;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
   
   #timeDate {
     text-align: left;
     font-size: 16px;
     font-weight: 600;
-    position: relative;
-    left: 35px;
-    top: 25px;
+    padding-top: 30px;
+    padding-left: 40px;
   }
   
-  #search-icon {
-    font-size: 20px;
-    position: relative;
-    left: 48px;
-    top: -55px;
-  }
-  
-  #currentlocation-button {
-    background-color: transparent;
-    border: solid 2px #ff6699;
-    border-radius: 20%;
-    position: relative;
-    left: 350px;
-    top: -99px;
-    height: 35px;
-    width: 35px;
-  }
-  
-  #location-button :hover {
-    background-color: #ff99cc;
-    border: none;
-    border-radius: 20%;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
-  }
   
   

@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Weather />
-        <Footer />
-      </header>
+      </header> <br />
+      <Footer />
     </div>
   );
 }

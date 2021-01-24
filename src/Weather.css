@@ -1,7 +1,7 @@
 .Button {
   color: #ff6699;
-  border-radius: 20%;
-  border: 1px solid #ff99cc;
+  border-radius: 15%;
+  border: 3px dotted #ff99cc;
   font-weight: 600;
   position: relative;
   top: -33px;

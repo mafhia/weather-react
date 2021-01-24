@@ -68,7 +68,7 @@ export default function Weather() {
         onChange={updateCity}
         autoFocus="on"
       />
-      <input type="submit" className="Button" value="Go" />
+      <input type="submit" className="Button" value="Search" />
      </form>
     <WeatherDetails data={weather} />
     </div>

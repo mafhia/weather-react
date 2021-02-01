@@ -66,9 +66,9 @@ export default function Weather() {
     axios.get(apiUrl).then(showWeather);
   }
 
-  function showCurrentLocation(event) {
+  function getCurrentLocation(event) {
     event.preventDefault();
-    navigator.geolocation.getCurrentLocation(findCurrentLocation);
+    navigator.geolocation.getCurrentPosition(findCurrentLocation);
   }
 
   let form = (
@@ -83,7 +83,7 @@ export default function Weather() {
         autoFocus="on"
       />
       <input type="submit" className="Button" value="Search" />
-      <button type="button" onClick={showCurrentLocation} className="locationButton">📍</button>
+      <button type="button" onClick={getCurrentLocation} className="locationButton">📍</button>
      </form>
     <WeatherDetails data={weather} />
     </div>

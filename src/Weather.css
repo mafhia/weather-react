@@ -81,6 +81,15 @@
     padding-top: 30px;
     padding-left: 40px;
   }
+
+.locationButton {
+    background-color: transparent;
+    border: solid 2px #ff6699;
+    border-radius: 20%;
+    height: 35px;
+    width: 35px;
+}
+  
   
   
   

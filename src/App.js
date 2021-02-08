@@ -8,7 +8,7 @@ import './Weather.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App background">
       <header className="App-header">
         <Weather />
       </header> <br />
